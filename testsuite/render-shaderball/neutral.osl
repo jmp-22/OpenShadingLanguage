@@ -1,0 +1,13 @@
+surface
+neutral
+(
+    string texture_path = "maps/neutral.ACEScg.exr"
+        [[ string description = "18% grey texture" ]]
+)
+{
+    color base = texture(texture_path, u, 1 - v,
+                        "colorspace", "ACEScg");
+    
+    normal Nn = normalize(N);
+    Ci = base * diffuse(Nn);
+}

@@ -1,0 +1,42 @@
+<World>
+   <Camera eye="0.065, 0.195, 0.179" look_at="0,0.034,0" fov="46" />
+
+    <ShaderGroup name="backplane">
+        color Cs 0.5 0.5 0.5; shader matte layer1;
+    </ShaderGroup>
+    <ShaderGroup name="emitterLeft"
+        is_light="yes">float power 1.5; shader emitter layer1
+    </ShaderGroup>
+    <ShaderGroup name="emitterTop"
+        is_light="yes">float power 1; shader emitter layer1
+    </ShaderGroup>
+    <ShaderGroup name="back">
+        color Cs 0.5 0.5 0.5; shader matte layer1;
+    </ShaderGroup>
+    <ShaderGroup name="front">
+        color Cs 0.5 0.5 0.5; shader matte layer1;
+    </ShaderGroup>
+    <ShaderGroup name="ground">
+        color Cs 0.5 0.5 0.5; shader matte layer1;
+    </ShaderGroup>
+    <ShaderGroup name="left">
+        color Cs 0.5 0.5 0.5; shader matte layer1;
+    </ShaderGroup>
+    <ShaderGroup name="right">
+        color Cs 0.5 0.5 0.5; shader matte layer1;
+    </ShaderGroup>
+    <ShaderGroup name="top">
+        color Cs 0.5 0.5 0.5; shader matte layer1;
+    </ShaderGroup>
+    <ShaderGroup name="material_surface">
+        color Cs 0.5 0.5 0.5; shader matte layer1;
+    </ShaderGroup>
+    <ShaderGroup name="neutral">
+        shader neutral layer1;
+    </ShaderGroup>
+    <ShaderGroup name="sss_bars">
+        color Cs 0.5 0.5 0.5; shader matte layer1;
+    </ShaderGroup>
+    <Model filename="shaderball-scene-light-geo-centimeter-test.obj" />
+
+</World>
