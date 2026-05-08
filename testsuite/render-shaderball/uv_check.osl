@@ -1,0 +1,8 @@
+surface
+uv_check
+()
+{
+    float freq = 10.0;
+    float checker = mod(floor(u * freq) + floor(v * freq), 2.0);
+    Ci = color(checker) * diffuse(normalize(N));
+}
