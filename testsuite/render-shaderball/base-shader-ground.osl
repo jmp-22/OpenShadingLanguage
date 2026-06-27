@@ -1,7 +1,7 @@
 surface
-neutral
+base_shader_ground
 (
-    string texture_path = "maps/neutral.ACEScg.exr"
+    string texture_path = "maps/ground.ACEScg.exr"
         [[ string description = "18% grey texture" ]]
 )
 {
@@ -10,4 +10,7 @@ neutral
     
     normal Nn = normalize(N);
     Ci = base * diffuse(Nn);
+    // normal Nn = normalize(N);
+    // color vis = color(Nn.x, Nn.y, Nn.z) * 0.5 + color(0.5);
+    // Ci = vis * diffuse(Nn);
 }

@@ -17,7 +17,7 @@
         color Cs 0.5 0.5 0.5; shader matte layer1;
     </ShaderGroup>
     <ShaderGroup name="ground">
-        color Cs 0.5 0.5 0.5; shader matte layer1;
+        shader base_shader_ground layer1;
     </ShaderGroup>
     <ShaderGroup name="left">
         color Cs 0.5 0.5 0.5; shader matte layer1;
@@ -32,7 +32,7 @@
         color Cs 0.5 0.5 0.5; shader matte layer1;
     </ShaderGroup>
     <ShaderGroup name="neutral">
-        shader neutral layer1;
+        shader base_shader layer1;
     </ShaderGroup>
     <ShaderGroup name="sss_bars">
         color Cs 0.5 0.5 0.5; shader matte layer1;
